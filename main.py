@@ -35,7 +35,7 @@ def send_tap_request(auth_token):
 
     data = {
         "available_taps": 1000,  
-        "count": random.randint(270, 310), # Number of taps as random number
+        "count": random.randint(300, 500), # Number of taps as random number
         "timestamp": int(time.time()),  # Generate current timestamp
         "salt": "83fded5f-fac6-4882-82a6-26723fe8071c"
     }
@@ -75,4 +75,4 @@ while True:
             time.sleep(2)  # Small delay between requests
 
     print("Waiting 5 minutes before the next cycle...")
-    time.sleep(300)  # Wait for 5 minutes before restarting
+    time.sleep(360)  # Wait for 6 minutes before restarting
